@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 
 // This runs on the server only, so the API key is never exposed to the browser.
 const GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions";
-const MODEL = "llama-3.1-8b-instant"; // swap for another Groq model if you like
+const MODEL = "openai/gpt-oss-20b"; // swap for another Groq model if you like
 
 export async function POST(req) {
   try {
